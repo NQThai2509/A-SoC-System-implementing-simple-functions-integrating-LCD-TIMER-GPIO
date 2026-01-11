@@ -1,0 +1,993 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan  9 10:56:11 2026
+# Process ID: 3988
+# Current directory: E:/SoC/LCD_V3/LCD_V2/LCD_h.runs/synth_1
+# Command line: vivado.exe -log AHBLITE_SYS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AHBLITE_SYS.tcl
+# Log file: E:/SoC/LCD_V3/LCD_V2/LCD_h.runs/synth_1/AHBLITE_SYS.vds
+# Journal file: E:/SoC/LCD_V3/LCD_V2/LCD_h.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AHBLITE_SYS.tcl -notrace
+Command: synth_design -top AHBLITE_SYS -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21736 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 375.773 ; gain = 113.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AHBLITE_SYS' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:37]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Vivado_Design_Suite/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [E:/Vivado_Design_Suite/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'CORTEXM0INTEGRATION' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/CortexM0-DS/CORTEXM0INTEGRATION.v:29]
+INFO: [Synth 8-6157] synthesizing module 'cortexm0ds_logic' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/CortexM0-DS/cortexm0ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm0ds_logic' (2#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/CortexM0-DS/cortexm0ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'CORTEXM0INTEGRATION' (3#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/CortexM0-DS/CORTEXM0INTEGRATION.v:29]
+WARNING: [Synth 8-689] width (2) of port connection 'HRESP' does not match port width (1) of module 'CORTEXM0INTEGRATION' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:193]
+INFO: [Synth 8-6157] synthesizing module 'AHBDCD' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BUS/AHBDCD.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'AHBDCD' (4#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BUS/AHBDCD.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHBMUX' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BUS/AHBMUX.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'AHBMUX' (5#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BUS/AHBMUX.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHB2MEM' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BRAM/AHB2BRAM.v:11]
+	Parameter MEMWIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'code.hex' is read successfully [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BRAM/AHB2BRAM.v:40]
+WARNING: [Synth 8-6014] Unused sequential element APhase_HRADDR_reg was removed.  [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BRAM/AHB2BRAM.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'AHB2MEM' (6#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_BRAM/AHB2BRAM.v:11]
+INFO: [Synth 8-6157] synthesizing module 'AHBTIMER' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_TIMER/AHBTIMER.v:38]
+	Parameter LDADDR bound to: 4'b0000 
+	Parameter VALADDR bound to: 4'b0100 
+	Parameter CTLADDR bound to: 4'b1000 
+	Parameter CLRADDR bound to: 4'b1100 
+	Parameter st_idle bound to: 1'b0 
+	Parameter st_count bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'prescaler' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_TIMER/prescaler.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'prescaler' (7#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_TIMER/prescaler.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'AHBTIMER' (8#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_TIMER/AHBTIMER.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHBGPIO' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_GPIO/AHBGPIO.v:13]
+	Parameter gpio_data_addr bound to: 8'b00000000 
+	Parameter gpio_dir_addr bound to: 8'b00000100 
+INFO: [Synth 8-6155] done synthesizing module 'AHBGPIO' (9#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_GPIO/AHBGPIO.v:13]
+WARNING: [Synth 8-689] width (4) of port connection 'GPIOOUT' does not match port width (16) of module 'AHBGPIO' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:385]
+INFO: [Synth 8-6157] synthesizing module 'AHBLCD' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_LCD/AHBLCD.v:1]
+	Parameter CLOCK_FREQ bound to: 156250000 - type: integer 
+	Parameter US bound to: 156 - type: integer 
+	Parameter DL_SEND1 bound to: 6000000 - type: integer 
+	Parameter DL_SEND2 bound to: 6500 - type: integer 
+	Parameter DL_100US bound to: 1500000 - type: integer 
+	Parameter DL_CMD bound to: 150000 - type: integer 
+	Parameter DL_CLR bound to: 150000 - type: integer 
+	Parameter PULSE_WIDTH bound to: 15000 - type: integer 
+	Parameter L_RESET bound to: 4'b0000 
+	Parameter L_POW_WAIT bound to: 4'b0001 
+	Parameter L_SEND_3 bound to: 4'b0010 
+	Parameter L_WAIT_3 bound to: 4'b0011 
+	Parameter L_SEND_2 bound to: 4'b0100 
+	Parameter L_CMD_SETUP bound to: 4'b0101 
+	Parameter L_IDLE bound to: 4'b0110 
+	Parameter L_SET_DDRAM1 bound to: 4'b0111 
+	Parameter L_WRITE_CHARS1 bound to: 4'b1000 
+	Parameter L_SET_DDRAM2 bound to: 4'b1001 
+	Parameter L_WRITE_CHARS2 bound to: 4'b1010 
+	Parameter L_SEND_BYTE_SETUP bound to: 4'b1011 
+	Parameter L_SEND_HIGH_PULSE bound to: 4'b1100 
+	Parameter L_SEND_HIGH_HOLD bound to: 4'b1101 
+	Parameter L_SEND_LOW_PULSE bound to: 4'b1110 
+	Parameter L_POST_BYTE_DELAY bound to: 4'b1111 
+INFO: [Synth 8-226] default block is never used [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_LCD/AHBLCD.v:221]
+WARNING: [Synth 8-6014] Unused sequential element base_reg was removed.  [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_LCD/AHBLCD.v:125]
+WARNING: [Synth 8-5788] Register disp_ram_reg in module AHBLCD is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'disp_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "disp_ram_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'AHBLCD' (10#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_LCD/AHBLCD.v:1]
+WARNING: [Synth 8-3848] Net RsTx in module/entity AHBLITE_SYS does not have driver. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:42]
+WARNING: [Synth 8-3848] Net TCK in module/entity AHBLITE_SYS does not have driver. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:203]
+WARNING: [Synth 8-3848] Net TDI in module/entity AHBLITE_SYS does not have driver. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:205]
+WARNING: [Synth 8-3848] Net hrdata_uart in module/entity AHBLITE_SYS does not have driver. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:84]
+WARNING: [Synth 8-3848] Net hready_uart in module/entity AHBLITE_SYS does not have driver. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'AHBLITE_SYS' (11#1) [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:37]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[31]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[30]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[29]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[28]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[27]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[26]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[25]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[24]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[23]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[22]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[21]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[20]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[19]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[18]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[17]
+WARNING: [Synth 8-3331] design AHBGPIO has unconnected port HWDATA[16]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[23]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[22]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[21]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[20]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[19]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[18]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[17]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[16]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[15]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[14]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[13]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[12]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[11]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[10]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[9]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[8]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[7]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[6]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[5]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[4]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[3]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[2]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[1]
+WARNING: [Synth 8-3331] design AHBDCD has unconnected port HADDR[0]
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port FCLK
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port nTRST
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port TDI
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port WICENREQ
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port SE
+WARNING: [Synth 8-3331] design AHBLITE_SYS has unconnected port RsTx
+WARNING: [Synth 8-3331] design AHBLITE_SYS has unconnected port RsRx
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 679.031 ; gain = 416.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_CORTEXM0INTEGRATION:SWCLKTCK to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:172]
+WARNING: [Synth 8-3295] tying undriven pin u_CORTEXM0INTEGRATION:TDI to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:172]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[31] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[30] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[29] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[28] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[27] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[26] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[25] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[24] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[23] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[22] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[21] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[20] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[19] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[18] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[17] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[16] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[15] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[14] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[13] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[12] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[11] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[10] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[9] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[8] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[7] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[6] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[5] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[4] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[3] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[2] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[1] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S2[0] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[31] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[30] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[29] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[28] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[27] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[26] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[25] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[24] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[23] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[22] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[21] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[20] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[19] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[18] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[17] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[16] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[15] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[14] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[13] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[12] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[11] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[10] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[9] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[8] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[7] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[6] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[5] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[4] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[3] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[2] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[1] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S5[0] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[31] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[30] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[29] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[28] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[27] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[26] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[25] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[24] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[23] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[22] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[21] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[20] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[19] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[18] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[17] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[16] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[15] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[14] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[13] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[12] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[11] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[10] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[9] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[8] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[7] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[6] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[5] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[4] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[3] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[2] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[1] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S6[0] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S7[31] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+WARNING: [Synth 8-3295] tying undriven pin uAHBMUX:HRDATA_S7[30] to constant 0 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHBLITE_SYS.v:268]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 679.031 ; gain = 416.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 679.031 ; gain = 416.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/SoC/LCD_V3/LCD_V2/lab_files/lcd.xdc]
+Finished Parsing XDC File [E:/SoC/LCD_V3/LCD_V2/lab_files/lcd.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/SoC/LCD_V3/LCD_V2/lab_files/lcd.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AHBLITE_SYS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AHBLITE_SYS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 990.082 ; gain = 0.070
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 990.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 990.102 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 990.102 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 990.234 ; gain = 728.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 990.234 ; gain = 728.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 990.234 ; gain = 728.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/CortexM0-DS/cortexm0ds_logic.v:3158]
+INFO: [Synth 8-5546] ROM "dec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MUX_SEL" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'last_HADDR_reg' and it is trimmed from '32' to '4' bits. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_TIMER/AHBTIMER.v:102]
+INFO: [Synth 8-5544] ROM "control" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clear" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "timer_irq_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timer_irq_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3936] Found unconnected internal register 'last_HADDR_reg' and it is trimmed from '32' to '8' bits. [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_GPIO/AHBGPIO.v:42]
+INFO: [Synth 8-802] inferred FSM for state register 'init_setup_reg' in module 'AHBLCD'
+INFO: [Synth 8-5545] ROM "lstate" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkcnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LCD_E" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LCD_E" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "byte_to_send" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+*
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'init_setup_reg' using encoding 'sequential' in module 'AHBLCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:52 . Memory (MB): peak = 990.234 ; gain = 728.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 72    
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 34    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 1353  
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   3 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	  16 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 456   
+	  16 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AHBLITE_SYS 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module cortexm0ds_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 72    
++---Registers : 
+	                1 Bit    Registers := 1334  
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 404   
+Module AHBDCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module AHBMUX 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module AHB2MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+Module prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module AHBTIMER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module AHBGPIO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+Module AHBLCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 33    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   7 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	  16 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	  16 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Affpw60, operation Mode is: A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: Generating DSP Affpw60, operation Mode is: A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: Generating DSP Affpw60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clkcnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lstate" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LCD_E" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LCD_E" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'uAHBGPIO/last_HWRITE_reg' into 'uAHBTIMER/last_HWRITE_reg' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_GPIO/AHBGPIO.v:44]
+INFO: [Synth 8-4471] merging register 'uAHBGPIO/last_HTRANS_reg[1:0]' into 'uAHBTIMER/last_HTRANS_reg[1:0]' [E:/SoC/LCD_V3/LCD_V2/lab_files/FPGA/AHB_GPIO/AHBGPIO.v:43]
+INFO: [Synth 8-5546] ROM "uAHBDCD/dec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "uAHBDCD/MUX_SEL" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "uAHBTIMER/timer_irq_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uAHBTIMER/timer_irq_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port FCLK
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port nTRST
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port TDI
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port WICENREQ
+WARNING: [Synth 8-3331] design cortexm0ds_logic has unconnected port SE
+WARNING: [Synth 8-3331] design AHBLITE_SYS has unconnected port RsTx
+WARNING: [Synth 8-3331] design AHBLITE_SYS has unconnected port RsRx
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Sbyax6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Gv1bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Gv1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Mz1bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ar1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Mz1bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Mz1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/S32bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/S32bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Vyfbx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Uo2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Cc2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ig2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Qaipw6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ee3bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/S53bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Y93bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Gx2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/M13bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/At2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ok2bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/W51bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Oi1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Um1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Woiax6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ca1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ie1bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Sq3bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Pgjbx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Eghbx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ki3bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Jp9bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Om3bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Y72bx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/L3bbx6_reg' (FDC) to 'u_CORTEXM0INTEGRATION/u_logic/Kshbx6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Kshbx6_reg)
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[1]' (FDCE) to 'uAHBLCD/rHADDR_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[0]' (FDCE) to 'uAHBLCD/rHADDR_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[2]' (FDCE) to 'uAHBLCD/rHADDR_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[3]' (FDCE) to 'uAHBLCD/rHADDR_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[4]' (FDCE) to 'uAHBLCD/rHADDR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[5]' (FDCE) to 'uAHBLCD/rHADDR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[6]' (FDCE) to 'uAHBLCD/rHADDR_reg[6]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWADDR_reg[7]' (FDCE) to 'uAHBLCD/rHADDR_reg[7]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[8]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[9]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[10]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[10]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[11]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[11]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[12]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'uAHBLCD/rHADDR_reg[13]' (FDCE) to 'uAHB2RAM/APhase_HWADDR_reg[13]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HTRANS_reg[1]' (FDCE) to 'uAHBLCD/rHTRANS_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uAHB2RAM/APhase_HWRITE_reg' (FDCE) to 'uAHBLCD/rHWRITE_reg'
+INFO: [Synth 8-3886] merging instance 'uAHBTIMER/last_HADDR_reg[1]' (FDE) to 'uAHBGPIO/last_HADDR_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uAHBTIMER/last_HADDR_reg[0]' (FDE) to 'uAHBGPIO/last_HADDR_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uAHBTIMER/last_HADDR_reg[2]' (FDE) to 'uAHBGPIO/last_HADDR_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uAHBTIMER/last_HADDR_reg[3]' (FDE) to 'uAHBGPIO/last_HADDR_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /A3ipw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uAHBLCD/LCD_RW_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Qa1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Qj1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /L0ypw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gw6bx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Wq8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Oh8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Xf8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /E97ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /D2opw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Zgfax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Kn2qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Puwpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ufbbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bcdbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Jfdbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ldvpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Sddbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Stkpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Kadbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /C72qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Zwnpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /J4cbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /S2cbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Nfqpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Wt3qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Hlwpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Yzlpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Z73qw6_reg)
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Zslpw6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Gnqpw6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gc1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gl1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /C2ypw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Xx6bx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ns8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Fj8ax6_reg)
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Krlpw6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Gpqpw6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Golpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Vplpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Okfax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Pifax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Liabx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Va7ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /P93qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /T3opw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Q89bx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bp2qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gwwpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Lhbbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ojebx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ahdbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Cfvpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /H0ebx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Jvkpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Urgbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ra2qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Yzqpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /A6cbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Drcbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /D2rpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Nv3qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ymwpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /O1mpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /L5lpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /W6ipw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Li7ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bx2qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gnqpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Nrqpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Gpqpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Nmfax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /J0gax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /I4rpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /M8ipw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bk7ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /L03qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Qsfax6_reg)
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/D1aax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Xwaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Bvaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/N39ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Hz9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Lx9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Yvabx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /H7hbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bvfbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Nwdbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ufebx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Dpwpw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Yubbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Jl3qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ym3qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ad7ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Ke1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Yf1qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /H4ypw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /B79bx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Su8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Kl8ax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Fm7ax6_reg)
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ftaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Jraax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Npaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Pe9bx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Rnaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Vlaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/J5jbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Yjaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Ux8bx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Biaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Egaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Nmabx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Heaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Kcaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Nlbbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Naaax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Q8aax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Cndbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/J6ebx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Qlfbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Wxgbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/T6aax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/W4aax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Cccbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Fvcbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Khgax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Tchbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Z2aax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/N4gax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Vibax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Zgbax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Zgbax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Hdbax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Dfbax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Hdbax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Hdbax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/Tikbx6_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Tikbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /N4gax6_reg)
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Pv9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Tt9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Xr9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Tc9bx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Bq9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Fo9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/N3jbx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Im9ax6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Synth 8-3886] merging instance 'u_CORTEXM0INTEGRATION/u_logic/Xv8bx6_reg' (FDE) to 'u_CORTEXM0INTEGRATION/u_logic/J59ax6_reg'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Pkkbx6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Q2gax6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Bt2qw6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CORTEXM0INTEGRATION/u_logic /Q4dbx6_reg)
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:01:13 . Memory (MB): peak = 997.711 ; gain = 735.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AHB2MEM:    | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm0ds_logic | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/uAHB2RAM/memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/uAHB2RAM/memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/uAHB2RAM/memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/uAHB2RAM/memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:23 . Memory (MB): peak = 997.711 ; gain = 735.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:24 . Memory (MB): peak = 997.711 ; gain = 735.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AHB2MEM:    | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance uAHB2RAM/memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance uAHB2RAM/memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance uAHB2RAM/memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance uAHB2RAM/memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    76|
+|3     |DSP48E1    |     3|
+|4     |LUT1       |    71|
+|5     |LUT2       |   328|
+|6     |LUT3       |   303|
+|7     |LUT4       |   354|
+|8     |LUT5       |   635|
+|9     |LUT6       |  2303|
+|10    |MUXF7      |    73|
+|11    |MUXF8      |     2|
+|12    |RAMB36E1   |     1|
+|13    |RAMB36E1_1 |     1|
+|14    |RAMB36E1_2 |     1|
+|15    |RAMB36E1_3 |     1|
+|16    |FDCE       |   406|
+|17    |FDPE       |    66|
+|18    |FDRE       |   836|
+|19    |FDSE       |    80|
+|20    |IBUF       |     6|
+|21    |OBUF       |    11|
+|22    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------+------+
+|      |Instance                |Module              |Cells |
++------+------------------------+--------------------+------+
+|1     |top                     |                    |  5560|
+|2     |  uAHB2RAM              |AHB2MEM             |    23|
+|3     |  uAHBGPIO              |AHBGPIO             |    80|
+|4     |  uAHBLCD               |AHBLCD              |  1180|
+|5     |  uAHBMUX               |AHBMUX              |    57|
+|6     |  uAHBTIMER             |AHBTIMER            |   172|
+|7     |    uprescaler16        |prescaler           |    11|
+|8     |  u_CORTEXM0INTEGRATION |CORTEXM0INTEGRATION |  4022|
+|9     |    u_logic             |cortexm0ds_logic    |  4001|
++------+------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.094 ; gain = 852.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:01:22 . Memory (MB): peak = 1115.094 ; gain = 541.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1115.094 ; gain = 852.949
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1115.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+305 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1115.094 ; gain = 864.594
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1115.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/SoC/LCD_V3/LCD_V2/LCD_h.runs/synth_1/AHBLITE_SYS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AHBLITE_SYS_utilization_synth.rpt -pb AHBLITE_SYS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 10:57:46 2026...
